@@ -1,0 +1,38 @@
+.card {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    cursor: pointer;
+    width: 3rem;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__image {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  &__desc {
+    font-size: 1.4rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__group2 > a {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}

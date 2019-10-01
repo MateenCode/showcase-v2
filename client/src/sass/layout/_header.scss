@@ -1,0 +1,12 @@
+.header {
+  color: $color-primary;
+
+  &__title {
+    font-family: $font-family-1;
+    font-size: 4rem;
+    font-weight: 200;
+  }
+  &__desc {
+    font-size: 1.5rem;
+  }
+}

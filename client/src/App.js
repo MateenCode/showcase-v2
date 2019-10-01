@@ -1,31 +1,16 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { Provider } from "./context/context";
-import "./css/App.css";
+import React, { PureComponent } from "react";
+import { Route, Switch } from "react-router-dom";
 
-// Imported Components
-import Navbar from "./components/layout/Navigation";
-import Header from "./components/layout/Header";
-import CardList from "./components/CardList";
-import Edit from "./components/modal/EditModal";
-import Particle from "./components/layout/Particle";
+import { Home, Create, Edit } from "containers";
 
-class App extends Component {
+class App extends PureComponent {
   render() {
     return (
-      <BrowserRouter>
-        <React.Fragment>
-          <React.Fragment>
-            <Provider>
-              <Particle />
-              <Navbar />
-              <Header />
-              <Route path="/" component={CardList} exact />
-              <Route path="/edit/:id" component={Edit} />
-            </Provider>
-          </React.Fragment>
-        </React.Fragment>
-      </BrowserRouter>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/create' exact component={Create} />
+        <Route path='/edit/:id' exact component={Edit} />
+      </Switch>
     );
   }
 }

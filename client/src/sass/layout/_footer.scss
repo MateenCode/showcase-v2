@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid $color-secondary;
+
+  &__copyright {
+    margin: 0.5rem;
+    font-size: 0.5rem;
+    letter-spacing: -1px;
+  }
+
+  &__logo {
+    cursor: pointer;
+    margin: 1rem;
+    height: 3.5rem;
+  }
+}

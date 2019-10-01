@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid $color-secondary;
+  margin: 0.2rem 0rem;
+
+  &__logo {
+    height: 5rem;
+  }
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+  }
+  &__icon {
+    height: 3.5rem;
+    margin: 0.6rem;
+  }
+}

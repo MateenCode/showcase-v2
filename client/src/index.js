@@ -1,8 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import registerServiceWorker from "./registerServiceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./App";
+import { Provider } from "react-redux";
+import { Router } from "react-router-dom";
+import { history } from "helpers";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import App from "App";
+
+import store from "stores";
+
+import "sass/main.scss";
+
+import registerServiceWorker from "registerServiceWorker";
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
+  document.querySelector("#root")
+);
+
 registerServiceWorker();

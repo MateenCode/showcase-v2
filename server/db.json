@@ -1,0 +1,220 @@
+{
+  "cards": [
+    {
+      "title": "soundradio",
+      "image": "https://user-images.githubusercontent.com/28902787/29246535-b54cbc4c-7fc3-11e7-8fd5-08bdb0a936cb.png",
+      "description": "Javascript application that uses soundclouds API and allows user to search, play, and download songs",
+      "github": "https://github.com/MateenCode/XOSoundRadio-Project",
+      "live": "https://super-music.surge.sh/",
+      "id": 1
+    },
+    {
+      "description": "Javascript calculator that allows users to add, subtract, multiply and divide ",
+      "title": "calculator",
+      "live": "http://calculatorjsx.surge.sh/",
+      "github": "https://github.com/MateenCode/Calculator-Javascript",
+      "image": "https://user-images.githubusercontent.com/28902787/54409018-cfb5fc00-46a1-11e9-89be-e8f3e3934714.png",
+      "id": 2
+    },
+    {
+      "title": "eventbrite",
+      "image": "https://user-images.githubusercontent.com/28902787/43228136-9b89ca4e-9015-11e8-95d2-51d1f28b52f5.png",
+      "description": "Mongo, express, react & node application that similar to event bright made for practice  ",
+      "github": "https://github.com/MateenCode/EventBrite-MERN",
+      "live": "https://github.com/MateenCode/EventBrite-MERN",
+      "id": 3
+    },
+    {
+      "title": "looplabsocial",
+      "image": "https://user-images.githubusercontent.com/28902787/46485336-550eb980-c7b0-11e8-9cc5-4a79ba72a6b2.png",
+      "description": "Complete template that 100% mobile compatible that was used creating bootstrap4.",
+      "github": "https://github.com/MateenCode/LoopLapSocial-Bootstrap4",
+      "live": "https://mateencode.github.io/LoopLapSocial-Bootstrap4/",
+      "id": 4
+    },
+    {
+      "title": "apexchart",
+      "image": "https://user-images.githubusercontent.com/28902787/49060331-04b94400-f1c2-11e8-923a-29d66cbabc7a.png",
+      "description": "React using apexchart framework to display the largest city by population, it display horizontal and vertically",
+      "github": "https://github.com/MateenCode/ApexChart-ReactJS",
+      "live": "https://mateencode.github.io/ApexChart-ReactJS/",
+      "id": 5
+    },
+    {
+      "title": "lyricsearch",
+      "image": "https://user-images.githubusercontent.com/28902787/65927964-d7748e00-e3b0-11e9-8840-dae326f8d891.png",
+      "description": "Reacts app using context API along with the Musixmatch public API that allows users to search songs & song lyrics ",
+      "github": "https://github.com/MateenCode/LyricSearch-ReactJS",
+      "live": "http://lyricsearch.surge.sh/",
+      "id": 6
+    },
+    {
+      "title": "picturesearch",
+      "image": "https://user-images.githubusercontent.com/28902787/49657745-3ec1eb80-f9f5-11e8-8fef-0663856994b3.png",
+      "description": "React application that uses Material-UI & pixabay API to search & display images",
+      "github": "https://github.com/MateenCode/PictureSearch-ReactJS",
+      "live": "http://picturesearch.surge.sh/",
+      "id": 7
+    },
+    {
+      "title": "alphacodelearing",
+      "image": "https://user-images.githubusercontent.com/28902787/48807875-c6101f00-ecd3-11e8-9e01-6cba1f265f5d.png",
+      "description": "Vanilla javascript & css landing page for my personal private programming tutoring serves",
+      "github": "https://github.com/MateenCode/AlphaCodeLearning-ReactJS",
+      "live": "https://mateencode.github.io/Alphacode-OfficalSite/",
+      "id": 8
+    },
+    {
+      "title": "kitsusearch",
+      "image": "https://user-images.githubusercontent.com/28902787/50741658-c34e8800-11b4-11e9-9099-9101e20fdfae.png",
+      "description": "React application that uses kitsu API to search & display that let you search & discover new animes to watch ",
+      "github": "https://github.com/MateenCode/KitsuSearch-ReactJS",
+      "live": "http://kitsu.surge.sh/",
+      "id": 9
+    },
+    {
+      "title": "caloriecounter",
+      "description": "Calorie counter app that was created using react, bootstrap, awesomeicon, it lets you keep track of your daily intake ability to remove and update",
+      "image": "https://user-images.githubusercontent.com/28902787/50946334-8a7d1000-144d-11e9-815b-e849b34048e3.png",
+      "github": "https://github.com/MateenCode/CalorieCounter-ReactJS",
+      "live": "http://caloriecounter.surge.sh/",
+      "id": 10
+    },
+    {
+      "title": "clientpanel",
+      "image": "https://user-images.githubusercontent.com/28902787/48517194-68368f80-e81a-11e8-9b11-d0d9ef7ae1d1.png",
+      "description": "Angular application that demonstrates a client panel of owed money w/ firebase as the datebase",
+      "github": "https://github.com/MateenCode/ClientPanel-Angular",
+      "live": "http://calculatorjsx.surge.sh/",
+      "id": 11
+    },
+    {
+      "live": "http://forecastreact.surge.sh/",
+      "github": "https://github.com/MateenCode/Forecast-ReactJS",
+      "title": "weatherfinder",
+      "image": "https://user-images.githubusercontent.com/28902787/51695934-1dbf5500-1fb9-11e9-9c31-200f54b418fe.png",
+      "description": "React weather application that gives you the current weather & condition using users geolocation  ",
+      "id": 12
+    },
+    {
+      "title": "devlogger",
+      "description": "Devlogger is full CRUD application that lets you keep track and log every task completed on the project you're working it works service less but data is being stored in local storage in Angular",
+      "image": "https://user-images.githubusercontent.com/28902787/51701326-16527880-1fc6-11e9-82c8-25b41bbc3a68.png",
+      "github": "https://github.com/MateenCode/DevLogger-AngularJS",
+      "live": "http://devlogger.surge.sh/",
+      "id": 13
+    },
+    {
+      "title": "frequentlyasked",
+      "description": "Frequently asked questions application that lets user ask and answer question, serveless so data in being stored in local storage",
+      "image": "https://user-images.githubusercontent.com/28902787/32478451-7b9b2f5e-c34a-11e7-8dc6-5247bd50fd5f.png",
+      "github": "https://github.com/MateenCode/FAQ-AngularJS",
+      "live": "http://faqangular.surge.sh/",
+      "id": 14
+    },
+    {
+      "title": "videojot",
+      "image": "https://user-images.githubusercontent.com/28902787/51706725-31c48000-1fd4-11e9-945f-dea04978f91a.png",
+      "github": "https://github.com/MateenCode/VideoJot-Nodejs",
+      "live": "https://stark-bayou-10776.herokuapp.com/",
+      "description": "Node & express application that allows user to login & jot down videos ideas  ",
+      "id": 15
+    },
+    {
+      "title": "storybooks",
+      "description": "NodeJS social network for creating public or private stories. Users can choose to allow or disable comments per story using Google Auth",
+      "image": "https://user-images.githubusercontent.com/28902787/51709151-8bc84400-1fda-11e9-89cd-ce60fb37c73a.png",
+      "github": "https://github.com/MateenCode/StoryBooks-NodeJS",
+      "live": "https://whispering-everglades-91207.herokuapp.com/",
+      "id": 16
+    },
+    {
+      "title": "glozzom",
+      "image": "https://user-images.githubusercontent.com/28902787/51726028-2005cb80-201a-11e9-9542-ff294f1466af.png",
+      "description": "Bootstrap template with multiple page theme with quite a few different designs created only using bootstrap",
+      "github": "https://github.com/MateenCode/Glozzom-Bootstrap4",
+      "live": "http://glozzom.surge.sh/",
+      "id": 17
+    },
+    {
+      "title": "chatbox",
+      "image": "https://user-images.githubusercontent.com/28902787/53361110-207cd500-38ec-11e9-80f1-d3e40e2040f4.png",
+      "description": "NodeJS application that uses socket.io to instantly send & receive messages w/ waiting for a response ",
+      "github": "https://github.com/MateenCode/Chatbox-NodeJS",
+      "live": "https://chatboxjs.herokuapp.com/",
+      "id": 18
+    },
+    {
+      "description": "Virtual Flashcard application that lets you store question and answers w/ the ability to hide and show the answer aswell as edit, delete and grade yourself based on that answer you give and automaticly displays based on your grading .",
+      "title": "flashcards",
+      "image": "https://user-images.githubusercontent.com/28902787/53619453-4b914e00-3ba4-11e9-8366-77830a5244cb.png",
+      "github": "https://github.com/MateenCode/FlashCard-MERN",
+      "live": "https://flashcardbud.herokuapp.com/",
+      "id": 19
+    },
+    {
+      "title": "contactmanger",
+      "image": "https://user-images.githubusercontent.com/28902787/45378307-ef188300-b5b1-11e8-9780-2b0f353dc981.png",
+      "description": "React application that has all CRUD abilities & allows users to create, view, edit & delete user contacts ",
+      "github": "https://github.com/MateenCode/ContactManager-ReactJS",
+      "live": "https://mateencode.github.io/ContactManager-React/",
+      "id": 20
+    },
+    {
+      "description": "Bootstrap template with multiple page theme with quite a few different designs created only using bootstrap",
+      "title": "mizuxebooks",
+      "image": "https://user-images.githubusercontent.com/28902787/46543979-2e678600-c877-11e8-9fd2-7f39cbc12a2c.png",
+      "github": "https://github.com/MateenCode/MizuxeBookClub-BootStrap4",
+      "live": "http://book-clubz.surge.sh/",
+      "id": 21
+    },
+    {
+      "title": "fivedayforecast",
+      "image": "https://user-images.githubusercontent.com/28902787/54057893-150d9180-41a9-11e9-8923-e6eb78cb60a8.png",
+      "description": "Five day forecast application created using react, it display the current weather and dynamicaly updates from weathermap API and uses Geolocation and also display weather map layers depending on the condition.",
+      "github": "https://github.com/MateenCode/5DayForecast-ReactJS",
+      "live": "http://fivedayforecasts.surge.sh/",
+      "id": 22
+    },
+    {
+      "title": "videplayer",
+      "image": "https://user-images.githubusercontent.com/28902787/58129717-3c340680-7bcf-11e9-99dc-92661e53ae12.png",
+      "github": "https://github.com/MateenCode/Video-Player",
+      "live": "http://videoplayer-react.surge.sh/",
+      "description": "React application that uses youtubes API to search & display any video w/ semantic ui for styling",
+      "id": 23
+    },
+    {
+      "title": "streamcast",
+      "image": "https://user-images.githubusercontent.com/28902787/64648364-98fe3b80-d3cf-11e9-8df1-30b4d15f8938.png",
+      "description": "React streaming application that allows users to host & stream live video w/ OBS uses Redux as state manager  ",
+      "github": "https://github.com/MateenCode/streamcast",
+      "live": "https://github.com/MateenCode/streamcast/blob/master",
+      "id": 24
+    },
+    {
+      "title": "natours",
+      "image": "https://user-images.githubusercontent.com/28902787/65990749-00dcfa80-e441-11e9-90b3-1722e681f0d7.png",
+      "description": "HTML, CSS & SASS project that uses advance CSS with design patterns like 7-1 & Block Element Modifier",
+      "github": "https://github.com/MateenCode/Natours",
+      "live": "https://natours-projectx.surge.sh/",
+      "id": 25
+    },
+    {
+      "title": "nexter",
+      "image": "https://user-images.githubusercontent.com/28902787/65991796-cf652e80-e442-11e9-9a40-7a849ae8e19f.png",
+      "description": "HTML, CSS & SASS project that uses advance CSS with design patterns like Block Element Modifier that primarly focus on CSS Grid",
+      "github": "https://github.com/MateenCode/Nexter",
+      "live": "https://nexter-projectx.surge.sh/",
+      "id": 26
+    },
+    {
+      "title": "trillo",
+      "description": "HTML, CSS & SASS project that uses advance CSS with design patterns like Block Element Modifier that primarly focus on Flexbox",
+      "image": "https://user-images.githubusercontent.com/28902787/65999642-a9478a80-e452-11e9-89d8-a42b1024896e.png",
+      "github": "https://github.com/MateenCode/Trillo/blob/master/README.md",
+      "live": "https://trillo-projects.surge.sh/",
+      "id": 27
+    }
+  ]
+}

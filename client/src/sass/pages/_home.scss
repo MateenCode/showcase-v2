@@ -1,0 +1,24 @@
+.home {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    grid-column-gap: 4rem;
+    align-self: center;
+    justify-content: center;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__wrapper {
+    margin: 3rem 3rem 6rem 3rem;
+  }
+
+  &__icon {
+    cursor: pointer;
+    float: right;
+    height: 2rem;
+  }
+}
