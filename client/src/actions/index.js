@@ -27,7 +27,7 @@ export const deleteCard = id => async dispatch => {
 
 // Edit card
 export const editCard = (id, formValues) => async dispatch => {
-  const response = await axios.put(`/todos/${id}`, formValues);
+  const response = await axios.put(`/cards/${id}`, formValues);
   dispatch({ type: EDIT_CARD, payload: response.data });
   history.push("/");
 };
