@@ -1,5 +1,8 @@
 .loading {
-  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 25%;
+  left: 50%;
 }
 
 .lds-ring {

@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
   }
+  &__header1 {
+    font-size: 2.4rem;
+  }
+
   &__icon {
     cursor: pointer;
     width: 3rem;

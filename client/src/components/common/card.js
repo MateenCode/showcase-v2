@@ -5,7 +5,7 @@ export default function card(props) {
   return (
     <div className='card'>
       <div className='card__header'>
-        <h1>{props.title}</h1>
+        <h1 className='card__header1'>{props.title}</h1>
         {props.admin.admin && (
           <img className='card__icon' src={edit} alt={props.title} />
         )}
