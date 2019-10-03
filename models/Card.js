@@ -23,13 +23,9 @@ const CardSchema = new Schema({
     type: String,
     required: true
   },
-  liveLink: {
+  live: {
     type: String,
     required: true
-  },
-  date: {
-    type: Date,
-    default: Date.now
   }
 });
 
