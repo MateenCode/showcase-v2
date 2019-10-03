@@ -1,16 +1,21 @@
-const { exec } = require("child_process");
+const express = require("express");
+const connectDB = require("./config/db");
+const cors = require("cors");
 
-// Set port (default: 3000). For Heroku, we need to use
-// the port set by the environment variable $PORT
-const port = process.env.PORT || 5000;
+const app = express();
 
-const command = `json-server --watch db.json --port ${port}`;
+// Connect Database
+connectDB();
 
-exec(command, (err, stdout, stderr) => {
-  if (err) {
-    console.log("Error running exec", err);
-    return;
-  }
-  console.log("stdout:", stdout);
-  console.log("stderr:", stderr);
-});
+// Init Middleware
+app.use(cors());
+app.use(express.json({ extended: false }));
+
+app.get("/", (req, res) => res.send("API Running"));
+
+// Define Routes
+app.use("/api/cards", require("./routes/api/cards"));
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
