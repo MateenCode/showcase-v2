@@ -25,7 +25,7 @@ mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 // Use Routes
-app.use("/api/", card);
+app.use("/", card);
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {

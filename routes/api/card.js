@@ -4,7 +4,7 @@ const router = express.Router();
 // Card Model
 const Card = require("../../models/Card");
 
-// @route   POST api/add
+// @route   POST cards
 // @desc    add card
 // @access  Public
 router.post("/cards", (req, res) => {
@@ -27,7 +27,7 @@ router.post("/cards", (req, res) => {
   });
 });
 
-// @route   GET api/display
+// @route   GET cards
 // @desc    Get All Todos
 // @access  Public
 router.get("/cards", (req, res) => {
@@ -37,7 +37,7 @@ router.get("/cards", (req, res) => {
     .catch(err => res.json({ statue: false, err }));
 });
 
-// @route   PUT api/update
+// @route   PUT cards
 // @desc    update card
 // @access  Public
 router.put("/cards/:id", (req, res) => {
@@ -46,7 +46,7 @@ router.put("/cards/:id", (req, res) => {
     .catch(err => res.json({ statue: false, err }));
 });
 
-// @route   PUT api/swap
+// @route   PUT swap
 // @desc    replace ID
 // @access  Public
 router.put("/swap", (req, res) => {
@@ -68,7 +68,7 @@ router.put("/swap", (req, res) => {
     });
 });
 
-// @route   DELETE api/delete
+// @route   DELETE cards
 // @desc    delete card
 // @access  Public
 router.delete("/cards/:id", (req, res) => {
