@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const CardSchema = new mongoose.Schema({
+// Create Schema
+const CardSchema = new Schema({
   id: {
-    type: String,
-    required: true
+    type: Number,
+    default: 0
   },
   title: {
     type: String,
@@ -21,9 +23,13 @@ const CardSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  live: {
+  liveLink: {
     type: String,
     required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 });
 

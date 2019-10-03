@@ -27,6 +27,7 @@ export class index extends PureComponent {
   render() {
     const { cards } = this.props.cards;
     const { admin } = this.props;
+    console.log(cards);
     return (
       <>
         <Particle />
