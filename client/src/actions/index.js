@@ -8,7 +8,7 @@ import {
 
 // Fetch Cards
 export const fetchCards = () => async dispatch => {
-  const response = await axios.get("/cards");
+  const response = await axios.get("/api/cards");
   dispatch({ type: FETCH_CARDS, payload: response.data });
 };
 
