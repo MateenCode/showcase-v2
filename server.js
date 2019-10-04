@@ -1,8 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
+
 // Routes Requires
 const card = require("./routes/api/card");
 
@@ -10,7 +10,7 @@ const app = express();
 
 //Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json({ extended: false }));
 
 // DB Config
 const db = require("./config/keys").mongoURI;
