@@ -71,7 +71,7 @@ export class index extends PureComponent {
             />
           </div>
         </div>
-        <Footer />
+        {cards && <Footer />}
       </>
     );
   }
