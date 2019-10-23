@@ -1,11 +1,14 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent, lazy, Suspense } from "react";
 import { connect } from "react-redux";
 import { fetchCards, deleteCard } from "actions";
 import { animateScroll as scroll } from "react-scroll";
 
 import Header from "./Header";
 import { down, up } from "assets";
-import { Footer, Navbar, Particle, Card, Loading } from "components";
+import { Footer, Navbar, Particle, Loading } from "components";
+
+//Lazy loading cards
+const Card = lazy(() => import("components/common/card"));
 
 export class index extends PureComponent {
   componentDidMount() {
@@ -43,24 +46,26 @@ export class index extends PureComponent {
             />
             <br />
             <div className='home__cards'>
-              {cards && cards.length > 0 ? (
-                cards
-                  .sort((a, b) => b.id - a.id)
-                  .map(card => (
-                    <Card
-                      key={card.id}
-                      title={card.title}
-                      image={card.image}
-                      desc={card.description}
-                      github={card.github}
-                      live={card.live}
-                      admin={admin}
-                      delete={this.delete.bind(this, card.id)}
-                    />
-                  ))
-              ) : (
-                <Loading />
-              )}
+              <Suspense fallback={<Loading />}>
+                {cards && cards.length > 0 ? (
+                  cards
+                    .sort((a, b) => b.id - a.id)
+                    .map(card => (
+                      <Card
+                        key={card.id}
+                        title={card.title}
+                        image={card.image}
+                        desc={card.description}
+                        github={card.github}
+                        live={card.live}
+                        admin={admin}
+                        delete={this.delete.bind(this, card.id)}
+                      />
+                    ))
+                ) : (
+                  <Loading />
+                )}
+              </Suspense>
             </div>
             <br />
             <img
