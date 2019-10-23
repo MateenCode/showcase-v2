@@ -47,7 +47,8 @@ export class index extends PureComponent {
             <br />
             <div className='home__cards'>
               <Suspense fallback={<Loading />}>
-                {cards && cards.length > 0 ? (
+                {cards &&
+                  cards.length > 0 &&
                   cards
                     .sort((a, b) => b.id - a.id)
                     .map(card => (
@@ -61,10 +62,7 @@ export class index extends PureComponent {
                         admin={admin}
                         delete={this.delete.bind(this, card.id)}
                       />
-                    ))
-                ) : (
-                  <Loading />
-                )}
+                    ))}
               </Suspense>
             </div>
             <br />
