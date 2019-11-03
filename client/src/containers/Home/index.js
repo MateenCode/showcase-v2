@@ -68,12 +68,14 @@ export class index extends PureComponent {
               </Suspense>
             </div>
             <br />
-            <img
-              onClick={this.scrollToTop}
-              className='home__icon '
-              src={up}
-              alt='up'
-            />
+            {cards && (
+              <img
+                onClick={this.scrollToTop}
+                className='home__icon '
+                src={up}
+                alt='up'
+              />
+            )}
           </div>
         </div>
         {cards && <Footer />}
