@@ -5,7 +5,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 import Header from "./Header";
 import { down, up } from "assets";
-import { Footer, Navbar, Particle, Loading } from "components";
+import { Footer, Navbar, Loading } from "components";
 
 //Lazy loading cards
 const Card = lazy(() => import("components/common/card"));
@@ -32,12 +32,11 @@ export class index extends PureComponent {
     const { admin } = this.props;
     return (
       <>
-        <Particle />
         <Navbar admin={admin} />
         <Header />
-        <div className='home'>
+        <main className='home'>
           {/* <div className='home__animation'>animation display</div> */}
-          <div className='home__wrapper'>
+          <section className='home__wrapper'>
             <img
               onClick={this.scrollToBottom}
               className='home__icon'
@@ -76,8 +75,8 @@ export class index extends PureComponent {
                 alt='up'
               />
             )}
-          </div>
-        </div>
+          </section>
+        </main>
         {cards && <Footer />}
       </>
     );

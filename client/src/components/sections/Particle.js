@@ -2,16 +2,7 @@ import React from "react";
 import Particles from "react-particles-js";
 
 export default () => (
-  <div
-    style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100vh",
-      zIndex: -10
-    }}
-  >
+  <div className='particle'>
     <Particles
       params={{
         particles: {
