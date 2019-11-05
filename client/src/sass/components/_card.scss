@@ -1,4 +1,7 @@
 .card {
+  &:hover {
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +28,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
+    cursor: pointer;
   }
   &__desc {
     font-size: 1.3rem;

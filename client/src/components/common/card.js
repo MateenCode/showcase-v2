@@ -3,7 +3,7 @@ import { edit, trash, github, external } from "assets";
 
 export default function card(props) {
   return (
-    <div className='card'>
+    <div className='card animated fast swing'>
       <div className='card__header'>
         <h1 className='card__header1'>{props.title}</h1>
         {props.admin.admin && (
@@ -11,7 +11,9 @@ export default function card(props) {
         )}
       </div>
       <div className='card__body'>
-        <img className='card__image' src={props.image} alt={props.title} />
+        <a href={props.live} target='_blank' rel='noopener noreferrer'>
+          <img className='card__image' src={props.image} alt={props.title} />
+        </a>
         <p className='card__desc'>{props.desc}</p>
       </div>
       <div className='card__footer'>
