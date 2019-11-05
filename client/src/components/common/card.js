@@ -3,7 +3,7 @@ import { edit, trash, github, external } from "assets";
 
 export default function card(props) {
   return (
-    <div className='card animated fast swing'>
+    <div className='card animated slow jackInTheBox'>
       <div className='card__header'>
         <h1 className='card__header1'>{props.title}</h1>
         {props.admin.admin && (

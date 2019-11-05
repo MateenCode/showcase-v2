@@ -2,8 +2,7 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
-    grid-column-gap: 4rem;
+    grid-gap: 2rem;
     align-self: center;
     justify-content: center;
 
