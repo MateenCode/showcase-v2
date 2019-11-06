@@ -1,7 +1,7 @@
 import React from "react";
 import { edit, trash, github, external } from "assets";
 
-export default function Card(props) {
+export default function card(props) {
   return (
     <div className='card animated slow jackInTheBox'>
       <div className='card__header'>

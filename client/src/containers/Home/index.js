@@ -8,7 +8,7 @@ import { down, up } from "assets";
 import { Footer, Navbar, Loading } from "components";
 
 //Lazy loading cards
-const Card = lazy(() => import("components/common/Card"));
+const Card = lazy(() => import("components/common/card"));
 
 export class index extends PureComponent {
   componentDidMount() {
