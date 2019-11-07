@@ -12,11 +12,7 @@ export default function card(props) {
       </div>
       <div className='card__body'>
         <a href={props.live} target='_blank' rel='noopener noreferrer'>
-          <img
-            className='card__image animated slower fadeIn'
-            src={props.image}
-            alt={props.title}
-          />
+          <img className='card__image' src={props.image} alt={props.title} />
         </a>
         <p className='card__desc'>{props.desc}</p>
       </div>
