@@ -1,14 +1,11 @@
-import React, { PureComponent, lazy, Suspense } from "react";
+import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import { fetchCards, deleteCard } from "actions";
 import { animateScroll as scroll } from "react-scroll";
 
 import Header from "./Header";
 import { down, up } from "assets";
-import { Footer, Navbar, Loading } from "components";
-
-//Lazy loading cards
-const Card = lazy(() => import("components/common/card"));
+import { Footer, Navbar, Loading, Card } from "components";
 
 export class index extends PureComponent {
   componentDidMount() {
@@ -35,7 +32,6 @@ export class index extends PureComponent {
         <Navbar admin={admin} />
         <Header />
         <main className='home'>
-          {/* <div className='home__animation'>animation display</div> */}
           <section className='home__wrapper'>
             <img
               onClick={this.scrollToBottom}
@@ -45,26 +41,24 @@ export class index extends PureComponent {
             />
             <br />
             <div className='home__cards'>
-              <Suspense fallback={<Loading />}>
-                {cards && cards.length > 0 ? (
-                  cards
-                    .sort((a, b) => b.id - a.id)
-                    .map(card => (
-                      <Card
-                        key={card.id}
-                        title={card.title}
-                        image={card.image}
-                        desc={card.description}
-                        github={card.github}
-                        live={card.live}
-                        admin={admin}
-                        delete={this.delete.bind(this, card.id)}
-                      />
-                    ))
-                ) : (
-                  <Loading />
-                )}
-              </Suspense>
+              {cards && cards.length > 0 ? (
+                cards
+                  .sort((a, b) => b.id - a.id)
+                  .map(card => (
+                    <Card
+                      key={card.id}
+                      title={card.title}
+                      image={card.image}
+                      desc={card.description}
+                      github={card.github}
+                      live={card.live}
+                      admin={admin}
+                      delete={this.delete.bind(this, card.id)}
+                    />
+                  ))
+              ) : (
+                <Loading />
+              )}
             </div>
             <br />
             {cards && (
