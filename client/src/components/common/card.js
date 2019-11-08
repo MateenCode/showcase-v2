@@ -1,6 +1,9 @@
 import React from "react";
 import { edit, trash, github, external } from "assets";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
+
 export default function card(props) {
   return (
     <div className='card animated slow jackInTheBox'>
@@ -12,7 +15,12 @@ export default function card(props) {
       </div>
       <div className='card__body'>
         <a href={props.live} target='_blank' rel='noopener noreferrer'>
-          <img className='card__image' src={props.image} alt={props.title} />
+          <LazyLoadImage
+            className='card__image'
+            src={props.image}
+            alt={props.title}
+            effect='opacity'
+          />
         </a>
         <p className='card__desc'>{props.desc}</p>
       </div>
