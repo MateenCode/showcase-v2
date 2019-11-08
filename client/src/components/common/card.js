@@ -1,10 +1,12 @@
 import React from "react";
 import { edit, trash, github, external } from "assets";
-
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+  LazyLoadImage,
+  trackWindowScroll
+} from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
-export default function card(props) {
+function card(props) {
   return (
     <div className='card animated slow jackInTheBox'>
       <div className='card__header'>
@@ -20,6 +22,7 @@ export default function card(props) {
             src={props.image}
             alt={props.title}
             effect='opacity'
+            scrollPosition={props.scrollPosition}
           />
         </a>
         <p className='card__desc'>{props.desc}</p>
@@ -47,3 +50,5 @@ export default function card(props) {
     </div>
   );
 }
+
+export default trackWindowScroll(card);
