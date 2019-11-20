@@ -3,9 +3,8 @@ import { connect } from "react-redux";
 import { fetchCards, deleteCard } from "actions";
 import { animateScroll as scroll } from "react-scroll";
 
-import Header from "./Header";
 import { down, up } from "assets";
-import { Footer, Navbar, Loading, Card } from "components";
+import { Footer, Navbar, Loading, Card, Header } from "components";
 
 export class index extends PureComponent {
   componentDidMount() {
@@ -30,7 +29,10 @@ export class index extends PureComponent {
     return (
       <>
         <Navbar admin={admin} />
-        <Header />
+        <Header
+          header='Mateen Kazia'
+          sub='Demonstration page to display my work'
+        />
         <main className='home'>
           <article>
             <section className='home__wrapper'>

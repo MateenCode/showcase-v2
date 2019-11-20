@@ -1,19 +1,17 @@
 import React from "react";
+import { Navbar, Footer, Header } from "components";
 
 export default function index() {
   return (
-    <article>
-      <section>
-        <header className='u-margin-bottom-small'>
-          <hgroup>
-            <h1 className='header__title  u-center-text'>About Me</h1>
-            <h2 className='header__desc  u-center-text'>
-              Front-End Development | UI/UX Design & Development | Web
-              Applications
-            </h2>
-          </hgroup>
-        </header>
-        <section className='u-margin-bottom-small'>
+    <>
+      <Navbar admin={false} />
+      <article className='about'>
+        <Header
+          header='About Me'
+          sub='  Front-End Development | UI/UX Design & Development | Web
+              Applications'
+        />
+        <section className='about__text u-margin-bottom-small u-margin-top-small'>
           <p>
             I am a self-taught developer with an insatiable thirst for learning
             new technologies, as demonstrated by the many courses I have taken
@@ -52,8 +50,7 @@ export default function index() {
             the next level, no excuses.
           </p>
         </section>
-
-        <footer>
+        <footer className='about__footer'>
           <h2>Mateen Kazia</h2>
           <ul>
             <li>
@@ -70,7 +67,8 @@ export default function index() {
             </li>
           </ul>
         </footer>
-      </section>
-    </article>
+      </article>
+      <Footer />
+    </>
   );
 }
