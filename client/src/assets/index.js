@@ -7,5 +7,6 @@ import trash from "./icons/trash.svg";
 import edit from "./icons/edit.svg";
 import down from "./icons/down.svg";
 import up from "./icons/up.svg";
+import about from "./icons/about.svg";
 
-export { logo, folder, github, external, tool, trash, edit, down, up };
+export { logo, folder, github, external, tool, trash, edit, down, up, about };

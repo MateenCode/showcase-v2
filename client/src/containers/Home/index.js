@@ -4,7 +4,7 @@ import { fetchCards, deleteCard } from "actions";
 import { animateScroll as scroll } from "react-scroll";
 
 import { down, up } from "assets";
-import { Footer, Navbar, Loading, Card, Header } from "components";
+import { Loading, Card, Header } from "components";
 
 export class index extends PureComponent {
   componentDidMount() {
@@ -28,13 +28,12 @@ export class index extends PureComponent {
     const { admin } = this.props;
     return (
       <>
-        <Navbar admin={admin} />
         <Header
           header='Mateen Kazia'
           sub='Demonstration page to display my work'
         />
-        <main className='home'>
-          <article>
+        <main>
+          <article className='home'>
             <section className='home__wrapper'>
               <img
                 onClick={this.scrollToBottom}
@@ -75,7 +74,6 @@ export class index extends PureComponent {
             </section>
           </article>
         </main>
-        {cards && <Footer />}
       </>
     );
   }

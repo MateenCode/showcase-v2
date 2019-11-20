@@ -1,10 +1,9 @@
 import React from "react";
-import { Navbar, Footer, Header } from "components";
+import { Header } from "components";
 
 export default function index() {
   return (
     <>
-      <Navbar admin={false} />
       <article className='about'>
         <Header
           header='About Me'
@@ -68,7 +67,6 @@ export default function index() {
           </ul>
         </footer>
       </article>
-      <Footer />
     </>
   );
 }
