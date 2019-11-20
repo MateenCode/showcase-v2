@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export class Layout extends PureComponent {
   render() {
-    const { admin, cards } = this.props;
+    const { admin } = this.props;
     return (
       <>
         <nav className='navbar'>
@@ -37,18 +37,16 @@ export class Layout extends PureComponent {
 
         <main>{this.props.children}</main>
 
-        {cards && (
-          <footer className='footer'>
-            <p className='footer__copyright'>
-              © 2019 Mateen Kazia All Right Reserved
-            </p>
-            <img className='footer__logo' src={tool} alt='logo' />
-          </footer>
-        )}
+        <footer className='footer'>
+          <p className='footer__copyright'>
+            © 2019 Mateen Kazia All Right Reserved
+          </p>
+          <img className='footer__logo' src={tool} alt='logo' />
+        </footer>
       </>
     );
   }
 }
-const mapStateToProps = ({ admin, cards }) => ({ admin, cards });
+const mapStateToProps = ({ admin }) => ({ admin });
 
 export default connect(mapStateToProps)(Layout);
