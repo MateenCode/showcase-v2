@@ -7,9 +7,9 @@ export default function index() {
       <article className='about'>
         <Header
           header='About Me'
-          sub='  Front-End Development | UI/UX Design & Development | Web
-              Applications'
+          sub='Front-End Development | UI/UX Design & Development'
         />
+        <br />
         <section className='about__text u-margin-bottom-small u-margin-top-small'>
           <p>
             I am a self-taught developer with an insatiable thirst for learning
@@ -22,6 +22,7 @@ export default function index() {
             provide 1-on-1 training for aspiring and beginner-level software
             engineers.
           </p>
+          <br />
           <p>
             Over my four years in software development, I have had the pleasure
             of working in both startup and corporate environments. Most
@@ -35,6 +36,7 @@ export default function index() {
             solutions that we built were developed using blockchain technology
             and concepts.
           </p>
+          <br />
           <p>
             After finishing my project with SERVE Token, I have been focusing on
             my tutoring business while searching for a company to call home.
@@ -49,7 +51,7 @@ export default function index() {
             the next level, no excuses.
           </p>
         </section>
-        <footer className='about__footer'>
+        <footer className='about__footer u-margin-bottom-small'>
           <h2>Mateen Kazia</h2>
           <ul>
             <li>

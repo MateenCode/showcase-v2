@@ -1,0 +1,16 @@
+.about {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1rem 45rem;
+
+  @include respond(tab-land) {
+    padding: 1rem 4rem;
+  }
+
+  &__footer {
+    h2 {
+      font-family: cursive;
+      font-size: 2.5rem;
+    }
+  }
+}
