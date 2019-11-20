@@ -32,48 +32,47 @@ export class index extends PureComponent {
           header='Mateen Kazia'
           sub='Demonstration page to display my work'
         />
-        <main>
-          <article className='home'>
-            <section className='home__wrapper'>
-              <img
-                onClick={this.scrollToBottom}
-                className='home__icon'
-                src={down}
-                alt='down'
-              />
-              <br />
-              <div className='home__cards'>
-                {cards && cards.length > 0 ? (
-                  cards
-                    .sort((a, b) => b.id - a.id)
-                    .map(card => (
-                      <Card
-                        key={card.id}
-                        title={card.title}
-                        image={card.image}
-                        desc={card.description}
-                        github={card.github}
-                        live={card.live}
-                        admin={admin}
-                        delete={this.delete.bind(this, card.id)}
-                      />
-                    ))
-                ) : (
-                  <Loading />
-                )}
-              </div>
-              <br />
-              {cards && (
-                <img
-                  onClick={this.scrollToTop}
-                  className='home__icon '
-                  src={up}
-                  alt='up'
-                />
+
+        <article className='home'>
+          <section className='home__wrapper'>
+            <img
+              onClick={this.scrollToBottom}
+              className='home__icon'
+              src={down}
+              alt='down'
+            />
+            <br />
+            <div className='home__cards'>
+              {cards && cards.length > 0 ? (
+                cards
+                  .sort((a, b) => b.id - a.id)
+                  .map(card => (
+                    <Card
+                      key={card.id}
+                      title={card.title}
+                      image={card.image}
+                      desc={card.description}
+                      github={card.github}
+                      live={card.live}
+                      admin={admin}
+                      delete={this.delete.bind(this, card.id)}
+                    />
+                  ))
+              ) : (
+                <Loading />
               )}
-            </section>
-          </article>
-        </main>
+            </div>
+            <br />
+            {cards && (
+              <img
+                onClick={this.scrollToTop}
+                className='home__icon '
+                src={up}
+                alt='up'
+              />
+            )}
+          </section>
+        </article>
       </>
     );
   }

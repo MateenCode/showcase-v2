@@ -1,10 +1,12 @@
 import React, { PureComponent } from "react";
+import { connect } from "react-redux";
 
 import { logo, folder, github, about, tool } from "assets";
 import { Link } from "react-router-dom";
 
 export class Layout extends PureComponent {
   render() {
+    const { admin } = this.props;
     return (
       <>
         <nav className='navbar'>
@@ -15,9 +17,11 @@ export class Layout extends PureComponent {
             </div>
           </Link>
           <div className='navbar__box'>
-            {/* <Link to={"/create"}>
-                  <img className='navbar__icon' alt='create' src={folder} />
-                </Link> */}
+            {admin.admin && (
+              <Link to={"/create"}>
+                <img className='navbar__icon' alt='create' src={folder} />
+              </Link>
+            )}
             <Link to={"/about"}>
               <img className='navbar__icon' alt='about' src={about} />
             </Link>
@@ -43,5 +47,6 @@ export class Layout extends PureComponent {
     );
   }
 }
+const mapStateToProps = ({ admin }) => ({ admin });
 
-export default Layout;
+export default connect(mapStateToProps)(Layout);
