@@ -32,44 +32,46 @@ export class index extends PureComponent {
         <Navbar admin={admin} />
         <Header />
         <main className='home'>
-          <section className='home__wrapper'>
-            <img
-              onClick={this.scrollToBottom}
-              className='home__icon'
-              src={down}
-              alt='down'
-            />
-            <br />
-            <div className='home__cards'>
-              {cards && cards.length > 0 ? (
-                cards
-                  .sort((a, b) => b.id - a.id)
-                  .map(card => (
-                    <Card
-                      key={card.id}
-                      title={card.title}
-                      image={card.image}
-                      desc={card.description}
-                      github={card.github}
-                      live={card.live}
-                      admin={admin}
-                      delete={this.delete.bind(this, card.id)}
-                    />
-                  ))
-              ) : (
-                <Loading />
-              )}
-            </div>
-            <br />
-            {cards && (
+          <article>
+            <section className='home__wrapper'>
               <img
-                onClick={this.scrollToTop}
-                className='home__icon '
-                src={up}
-                alt='up'
+                onClick={this.scrollToBottom}
+                className='home__icon'
+                src={down}
+                alt='down'
               />
-            )}
-          </section>
+              <br />
+              <div className='home__cards'>
+                {cards && cards.length > 0 ? (
+                  cards
+                    .sort((a, b) => b.id - a.id)
+                    .map(card => (
+                      <Card
+                        key={card.id}
+                        title={card.title}
+                        image={card.image}
+                        desc={card.description}
+                        github={card.github}
+                        live={card.live}
+                        admin={admin}
+                        delete={this.delete.bind(this, card.id)}
+                      />
+                    ))
+                ) : (
+                  <Loading />
+                )}
+              </div>
+              <br />
+              {cards && (
+                <img
+                  onClick={this.scrollToTop}
+                  className='home__icon '
+                  src={up}
+                  alt='up'
+                />
+              )}
+            </section>
+          </article>
         </main>
         {cards && <Footer />}
       </>
@@ -79,7 +81,4 @@ export class index extends PureComponent {
 
 const mapStateToProps = ({ cards, admin }) => ({ cards, admin });
 
-export default connect(
-  mapStateToProps,
-  { fetchCards, deleteCard }
-)(index);
+export default connect(mapStateToProps, { fetchCards, deleteCard })(index);
