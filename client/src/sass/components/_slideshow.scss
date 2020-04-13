@@ -1,0 +1,43 @@
+.slideshow {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 80rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header1 {
+    font-size: 3rem;
+  }
+
+  &__icon {
+    cursor: pointer;
+    width: 3rem;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+  &__image {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  &__desc {
+    font-size: 1.3rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__group2 > a {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}

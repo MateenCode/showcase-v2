@@ -4,7 +4,7 @@ import { fetchCards, deleteCard } from "actions";
 import { animateScroll as scroll } from "react-scroll";
 
 import { down, up } from "assets";
-import { Loading, Card, Header } from "components";
+import { Loading, Card, Header, Slideshow } from "components";
 
 export class index extends PureComponent {
   componentDidMount() {
@@ -19,7 +19,7 @@ export class index extends PureComponent {
     scroll.scrollToTop();
   };
 
-  delete = id => {
+  delete = (id) => {
     this.props.deleteCard(id);
   };
 
@@ -42,11 +42,19 @@ export class index extends PureComponent {
               alt='down'
             />
             <br />
+            <Slideshow
+              title='KittyFresh'
+              image='https://user-images.githubusercontent.com/28902787/79084682-aaf3e400-7cfa-11ea-92c1-cceea055420a.png'
+              desc='massive e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, GraphQL, Context API, Firebase, Redux-Saga, Stripe + more. This is a full stack app (MERN stack), using Firebase.'
+              github='https://github.com/MateenCode/KittyFresh'
+              live='https://kittyfresh.herokuapp.com/'
+              admin='false'
+            />
             <div className='home__cards'>
               {cards && cards.length > 0 ? (
                 cards
                   .sort((a, b) => b.id - a.id)
-                  .map(card => (
+                  .map((card) => (
                     <Card
                       key={card.id}
                       title={card.title}
