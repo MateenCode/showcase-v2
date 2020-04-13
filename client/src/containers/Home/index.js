@@ -48,7 +48,6 @@ export class index extends PureComponent {
               desc='massive e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, GraphQL, Context API, Firebase, Redux-Saga, Stripe + more. This is a full stack app (MERN stack), using Firebase.'
               github='https://github.com/MateenCode/KittyFresh'
               live='https://kittyfresh.herokuapp.com/'
-              admin='false'
             />
             <div className='home__cards'>
               {cards && cards.length > 0 ? (

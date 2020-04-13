@@ -1,13 +1,21 @@
 .slideshow {
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1rem;
-  width: 80rem;
+  width: 75%;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    top: -4px;
+    background-color: white;
+    border-radius: 2px;
+  }
 
   &__header {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__header1 {
     font-size: 3rem;
   }
 
@@ -28,7 +36,7 @@
     cursor: pointer;
   }
   &__desc {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   &__footer {
